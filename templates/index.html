@@ -5,9 +5,9 @@
     <div class="col">
         <h2>Server</h2>
 
-        {% if serverStatus %}
+        {% if cookieValue %}
             <p class="alert alert-success">You are signed in via the server.</p>
-            <p>Hello, {{serverStatus}}!</p>
+            <p>Hello, {{cookieValue}}!</p>
             <a class="btn btn-primary" href="/sign-out">Sign out via the server.</a>
         {% else %}
             <p class="alert alert-danger">You are NOT signed in via the server.</p>
